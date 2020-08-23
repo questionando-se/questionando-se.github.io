@@ -4,6 +4,8 @@
     --text-color-gray: #E1E1E6;
     --primary-color: #9871f5;
     --secondary-color: #04d361;
+    --content-container-background: #FFF;
+    --content-container-text-color: #222;
 }
 
 * {

@@ -1,0 +1,46 @@
+.app#subjects {
+    background: var(--color-background);
+    color: var(--text-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app#subjects .content-container {
+    flex: 1;
+
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+    
+    background: var(--content-container-background);
+    color: var(--content-container-text-color);
+}
+
+.subjects-list {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.subjects-list .card.math {
+    background: #c3e9f4;
+}
+
+.subjects-list .card .card-image span.card-title {
+    border-radius: 0 10px 0 0;
+    background: rgba(50, 104, 192, 0.7);
+}
+
+@media (max-width: 800px) {
+    .subjects-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .subjects-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
