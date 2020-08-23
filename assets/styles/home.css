@@ -1,6 +1,6 @@
 .app#home {
     background: var(--color-background);
-    background-image: url(../images/bg_bottom.png);
+    background-image: url(../images/bg_bottom.svg);
     background-repeat: no-repeat;
     background-position: bottom right;
     
@@ -87,6 +87,20 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+
+    background: url(../images/landing.svg) no-repeat;
+    background-size: 80% 80%;
+    background-position: center top;
+}
+
+@media (max-width: 1000px) and (min-width: 850px) {
+    .app#home .app-content .left-column .button-row {
+        flex-direction: column;
+    }
+    .app#home .app-content .left-column .button-row a.btn.btn-start {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
 }
 
 @media (max-width: 850px) {
@@ -99,6 +113,10 @@
     }
     .app#home .app-content .left-column {
         margin-bottom: 8rem;
+    }
+    .app#home .app-content .right-column {
+        height: 400px;
+        background-size: contain;
     }
 }
 
