@@ -1,0 +1,113 @@
+.app#home {
+    background: var(--color-background);
+    background-image: url(../images/bg_bottom.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    
+    color: var(--text-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app#home nav a{
+    color: var(--text-color);
+}
+
+.app#home > .container {
+    width: 85%;
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.app#home .app-content {
+    flex: 1;
+
+    display: flex;
+    align-items: stretch;
+}
+
+.app#home .app-content .left-column {
+    width: 50%;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.app#home .app-content .left-column h1 {
+    font-size: 2.5rem;
+    max-width: 90%;
+    color: var(--text-color);
+}
+
+.app#home .app-content .left-column p {
+    max-width: 90%;
+    font-size: 1.3rem;
+    margin-bottom: 5rem;
+    color: var(--text-color-gray);
+}
+
+.app#home .app-content .left-column .button-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1.68rem;
+}
+
+.app#home .app-content .left-column .button-row a.btn.btn-start {
+    background-color: var(--primary-color);
+    font-weight: bold;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 5px;
+    margin-right: 2rem;
+}
+
+.app#home .app-content .left-column .button-row a.btn.btn-know {
+    background-color: var(--secondary-color);
+    font-weight: bold;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 5px;
+}
+
+.app#home .app-content .right-column {
+    flex: 1;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+@media (max-width: 850px) {
+    .app#home .app-content {
+        flex-direction: column-reverse;
+    }
+    .app#home .app-content .left-column,
+    .app#home .app-content .right-column {
+        width: 100%;
+    }
+    .app#home .app-content .left-column {
+        margin-bottom: 8rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .app#home .app-content .left-column .button-row {
+        flex-direction: column;
+    }
+    .app#home .app-content .left-column .button-row a.btn.btn-start {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+}
