@@ -115,7 +115,7 @@
         margin-bottom: 8rem;
     }
     .app#home .app-content .right-column {
-        height: 400px;
+        height: 400px !important;
         background-size: contain;
     }
 }
