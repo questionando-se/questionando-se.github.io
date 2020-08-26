@@ -1,24 +1,14 @@
 ---
 layout: default
 style: subjects
+title: Matérias
 ---
-<ul class="sidenav" id="mobile-menu">
-    <li><a href="#">Conheça</a></li>
-    <li><a href="#">Faça Parte</a></li>
-</ul>
+
+{% include sidenav.html %}
 
 <div class="app" id="subjects">
     <div class="container">
-        <nav class="transparent z-depth-0">
-            <div class="nav-wrapper">
-                <a href="{{ site.url }}/index.html" class="brand-logo">LOGO</a>
-                <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#">Conheça</a></li>
-                    <li><a href="#">Faça Parte</a></li>
-                </ul>
-            </div>
-        </nav>
+        {% include navbar.html %}
     </div>
     <div class="row">
         <h3>Matérias</h3>
@@ -26,7 +16,7 @@ style: subjects
     <div class="container content-container">
         <div class="alert">
             <div class="card-panel grey lighten-2 z-depth-0">
-                <i class="material-icons left">info</i> Devido há necessidade de análise das questões e, ainda, atualização dos repositórios, ainda existem poucas questões na plataforma. Novas questões serão cadastradas ao longo do tempo.
+                <i class="material-icons left">info</i> Devido a necessidade de análise das questões e, ainda, atualização dos repositórios do projeto, as questões serão adicionadas ao longo do tempo.
             </div>
         </div>
 
@@ -45,4 +35,4 @@ style: subjects
     </div>
 </div>
 
-<script src="{{ site.url }}/assets/scripts/subjects.js"></script>
+{% include footer.html %}

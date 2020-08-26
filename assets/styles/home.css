@@ -85,6 +85,11 @@
     background-position: center top;
 }
 
+.app#home .left-column h1 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
 @media (max-width: 1000px) and (min-width: 850px) {
     .app#home .app-content .left-column .button-row {
         flex-direction: column;

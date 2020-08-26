@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Questionando - O seu banco de questões gratuíto</title>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}Questionando - O seu banco de questões gratuíto</title>
     <!-- Google Icon Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <!-- Materialize -->
@@ -20,5 +20,6 @@
 
     <!-- Materialize -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="{{ site.url }}/assets/scripts/sidenav.js"></script>
 </body>
 </html>

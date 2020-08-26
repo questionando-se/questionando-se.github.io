@@ -3,33 +3,21 @@ layout: default
 style: home
 ---
 
-<ul class="sidenav" id="mobile-menu">
-    <li><a href="#">Conheça</a></li>
-    <li><a href="#">Faça Parte</a></li>
-</ul>
+{% include sidenav.html %}
 
 <div class="app" id="home">
     <div class="container">
-        <nav class="transparent z-depth-0">
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo">LOGO</a>
-                <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#">Conheça</a></li>
-                    <li><a href="#">Faça Parte</a></li>
-                </ul>
-            </div>
-        </nav>
+        {% include navbar.html %}
         <div class="app-content">
             <div class="left-column">
-                <h1>Questões de vestibulares de forma simples e gratuíta.</h1>
-                <p>Escrever uma descrição melhor aqui, pois agora estou sem criatividade, como quase sempre. E ainda, esse projeto vai ser bom.</p>
+                <h1>Questões de vestibulares de forma simples e gratuita.</h1>
+                <p>Acesse questões de vestibulares reunidas em um único lugar para você estudar!</p>
                 <div class="button-row">
                     <a href="{{ site.url }}/materias.html" class="waves-effect waves-dark btn btn-large z-depth-0 btn-start">
                         <i class="material-icons left">library_books</i>
                         Começar
                     </a>
-                    <a class="waves-effect waves-dark btn btn-large z-depth-0 btn-know">
+                    <a href="{{ site.url }}/conheca.html" class="waves-effect waves-dark btn btn-large z-depth-0 btn-know">
                         <i class="material-icons left">live_tv</i>
                         Conheça
                     </a>
@@ -40,5 +28,3 @@ style: home
         </div>
     </div>
 </div>
-
-<script src="{{ site.url }}/assets/scripts/home.js"></script>

@@ -10,7 +10,7 @@
 .app#subjects .content-container {
     flex: 1;
 
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
     padding: 20px;
     
     background: var(--content-container-background);
@@ -48,6 +48,19 @@
 
 .subjects-list .card.math .card-image span.card-title{
     background: rgba(50, 104, 192, 0.7);
+}
+
+
+.message-ok-check {
+    font-size: 100px;
+    margin-top: 50px;
+}
+.btn.primary {
+    background: var(--color-background);
+}
+
+footer.page-footer {
+    background: var(--color-background);
 }
 
 @media (max-width: 800px) {
