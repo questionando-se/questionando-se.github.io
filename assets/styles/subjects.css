@@ -59,6 +59,20 @@
     background: var(--color-background);
 }
 
+form input[type=text]:not(.browser-default):focus:not([readonly]),
+form input[type=email]:not(.browser-default):focus:not([readonly]),
+form textarea:not(.browser-default):focus:not([readonly]) {
+    border-color: var(--color-background);
+    -webkit-box-shadow: 0 1px 0 0 var(--color-background);
+    box-shadow: 0 1px 0 0 var(--color-background);
+}
+
+form input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+form input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+form textarea:not(.browser-default):focus:not([readonly]) + label {
+    color: var(--color-background);
+}
+
 footer.page-footer {
     background: var(--color-background);
 }
