@@ -17,3 +17,7 @@
 .app {
     min-height: 100vh;
 }
+
+.brand-logo img {
+    height: 64px;
+}
