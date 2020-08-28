@@ -113,7 +113,7 @@
     }
     .app#home .app-content .right-column {
         flex: unset;
-        height: 400px;
+        height: 310px;
         background-size: contain;
     }
 }
