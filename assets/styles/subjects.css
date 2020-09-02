@@ -31,7 +31,7 @@
 }
 
 .subjects-list .card .card-image span.card-title {
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
     text-align: center;
     width: 100%;
     padding: 12px 24px;
@@ -45,9 +45,15 @@
 .subjects-list .card.math {
     background: #c3e9f4;
 }
-
 .subjects-list .card.math .card-image span.card-title{
     background: rgba(50, 104, 192, 0.7);
+}
+
+.subjects-list .card.physics {
+    background: #1b5271;
+}
+.subjects-list .card.physics .card-image span.card-title{
+    background: rgba(0, 0, 0, 0.7);
 }
 
 
