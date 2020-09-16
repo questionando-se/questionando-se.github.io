@@ -48,11 +48,16 @@
 .subjects-list .card.math .card-image span.card-title{
     background: rgba(50, 104, 192, 0.7);
 }
-
 .subjects-list .card.physics {
     background: #1b5271;
 }
 .subjects-list .card.physics .card-image span.card-title{
+    background: rgba(0, 0, 0, 0.7);
+}
+.subjects-list .card.bio {
+    background: #4e3744;
+}
+.subjects-list .card.bio .card-image span.card-title{
     background: rgba(0, 0, 0, 0.7);
 }
 
